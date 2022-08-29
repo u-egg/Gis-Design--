@@ -26,10 +26,12 @@
         <!--left_side-->
         <section id="left_slide_section">
             <div class="left_side_select flex">
-                <div class="select_menu_layer" onclick="sideswap_layer()"><i
-                        class="fa-solid fa-layer-group fa-xs"></i>&nbsp;&nbsp;레이어 목록</div>
-                <div class="select_menu_search" onclick="sideswap_search()"><i
-                        class="fa-solid fa-magnifying-glass fa-xs"></i>&nbsp;&nbsp;검색</div>
+                <div class="select_menu_layer" onclick="sideswap_layer()">
+                    <i class="fa-solid fa-layer-group fa-xs"></i>&nbsp;&nbsp;레이어 목록
+                </div>
+                <div class="select_menu_search" onclick="sideswap_search()">
+                    <i class="fa-solid fa-magnifying-glass fa-xs"></i>&nbsp;&nbsp;검색
+                </div>
             </div>
 
             <div id="left_side_switching">
@@ -234,7 +236,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
 
         </section>
@@ -252,7 +254,20 @@
 
         <!--rightslide-->
         <section id="right_slide_section">
-            슬라이드등장
+            <div class="right_title">
+                <i class="fa-solid fa-layer-group fa-xs"></i>&nbsp; 레이어범례
+                <span class="right_close" onclick="right_side_off()">></span>
+            </div>
+            <div id="right_text_body">
+                <div class="right_sub_title">
+                    <input type="checkbox" id="all_check_clean">
+                    <label for="all_check_clean"><span>전체 해제</span></label>
+                    <button onclick="allClear()">전체 삭제</button>
+                </div>
+                <div class="right_body">
+                    갯벌조사정점_2015
+                </div>
+            </div>
         </section>
 
     </article>

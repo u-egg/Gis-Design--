@@ -58,6 +58,10 @@ header img{
     transition: all 0.3s;
 }
 
+#right_text_body{
+    display: block;
+}
+
 .left_side_select{
     border-bottom: 1px solid #bebebe;
 }
@@ -428,6 +432,60 @@ header img{
     position: absolute;
     transition: all 0.3s;
     display: none;
+}
+
+.right_title{
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    color: #fff;
+    background: #387ee7;
+    font-size: 15px;
+    position: relative;
+}
+
+.right_close{
+    font-size: 13px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.right_sub_title{
+    background: #e7ebf3;
+    color: #263748;
+    padding: 15px 86px 15px 15px;
+    font-size: 13px;
+    position: relative;
+}
+
+.right_sub_title span{
+    position: absolute;
+    left: 35px;
+    top: 13px;
+}
+
+.right_sub_title button{
+    position: absolute;
+    right: 5px;
+    background: #758095;
+    border-radius: 5px;
+    color: #fff;
+    top: 8px;
+    border: none;
+    height: 29px;
+    width: 80px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.right_body{
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    border-bottom: 1px #ddd solid;
+    color: #333;
+    font-size: 13px;
 }
 
 .flex{

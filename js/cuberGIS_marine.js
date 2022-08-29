@@ -123,5 +123,15 @@ function sideswap_search(){
 // right_side_on
 function right_side_on(){
     $("#right_slide_section").css("width", "300px")
+    $("#right_text_body").css("display", "block")
+}
 
+function right_side_off(){
+    $("#right_slide_section").css("width", "0")
+    $("#right_text_body").css("display", "none")
+}
+
+function allClear(){
+    $("#right_slide_section").css("width", "0")
+    $("#right_text_body").css("display", "none")
 }
