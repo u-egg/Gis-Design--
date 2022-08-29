@@ -22,180 +22,237 @@
         <img src="../asset/큐버로고.png">
     </header>
     <article>
-        
+
         <!--left_side-->
         <section id="left_slide_section">
             <div class="left_side_select flex">
-                <div class="select_menu_on"><i class="fa-solid fa-layer-group fa-xs"></i>&nbsp;&nbsp;레이어 목록</div>
-                <div class="select_menu_off"><i class="fa-solid fa-magnifying-glass fa-xs"></i>&nbsp;&nbsp;검색</div>
+                <div class="select_menu_layer" onclick="sideswap_layer()"><i
+                        class="fa-solid fa-layer-group fa-xs"></i>&nbsp;&nbsp;레이어 목록</div>
+                <div class="select_menu_search" onclick="sideswap_search()"><i
+                        class="fa-solid fa-magnifying-glass fa-xs"></i>&nbsp;&nbsp;검색</div>
             </div>
-            <div class="left_side_menu flex">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div style="border-right: none;">4</div>
-            </div>
-            <div class="left_side_menu flex">
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div style="border-right: none;">8</div>
-            </div>
-            <div class="left_side_all">
-                <div>전체보기</div>
-            </div>
-            <div class="left_side_title">
-                해양생태계종합조사
-            </div>
-            <div class="left_side_body">
-                
-                <!--que_1-->
-                <div class="left_side_que">
-                    갯벌생테조사
-                    <img class="img_on" src="../asset/depth_open.png">
-                    <img class="img_off" src="../asset/depth_close.png">
-                </div>
-                <div class="left_side_anw">
-                    <div>
-                        <input type="checkbox" id="anw_1">
-                        <label for="anw_1"><span>갯벌조사정점_2020</span></label>
+
+            <div id="left_side_switching">
+
+                <div class="left_side_menu flex">
+                    <div class="menu_item">
+                        <div class="wrap_on">
+                            <i class="fa-solid fa-chart-line fa-2x"></i><br>
+                            해양생태계<br>종합조사
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>갯벌조사정점_2019</span>
+                    <div class="menu_item">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-fish fa-2x"></i><br>
+                            해양<br>상태
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>갯벌조사정점_2018</span>
+                    <div class="menu_item">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-satellite-dish fa-2x"></i><br>
+                            해양<br>관측자료
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>갯벌조사정점_2017</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>갯벌조사정점_2016</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>갯벌조사정점_2015</span>
+                    <div class="menu_item" style="border-right: none;">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-file-circle-check fa-2x"></i><br>
+                            해역이용<br>영향평가
+                        </div>
                     </div>
                 </div>
-                
-                <!--que_2-->
-                <div class="left_side_que2">
-                    연안생태조사
-                    <img class="img_on2" src="../asset/depth_open.png">
-                    <img class="img_off2" src="../asset/depth_close.png">
-                </div>
-                <div class="left_side_anw2">
-                    <div>
-                        <input type="checkbox" id="anw_1">
-                        <label for="anw_1"><span>연안생태조사정점_2020</span></label>
+                <div class="left_side_menu flex">
+                    <div class="menu_item">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-trash-can fa-2x"></i><br>
+                            해양<br>폐기물
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>연안생태조사정점_2019</span>
+                    <div class="menu_item">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-map-location-dot fa-2x"></i><br>
+                            연안<br>주제도
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>연안생태조사정점_2018</span>
+                    <div class="menu_item">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-droplet fa-2x"></i><br>
+                            수질<br>평가
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>연안생태조사정점_2017</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>연안생태조사정점_2016</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>연안생태조사정점_2015</span>
+                    <div class="menu_item" style="border-right: none;">
+                        <div class="wrap_off">
+                            <i class="fa-solid fa-water fa-2x"></i><br>
+                            해양<br>대기질
+                        </div>
                     </div>
                 </div>
 
-                 <!--que_3-->
-                 <div class="left_side_que3">
-                    수중생태조사
-                    <img class="img_on3" src="../asset/depth_open.png">
-                    <img class="img_off3" src="../asset/depth_close.png">
-                </div>
-                <div class="left_side_anw3">
-                    <div>
-                        <input type="checkbox" id="anw_3">
-                        <label for="anw_3"><span>수중생태조사정점_2020</span></label>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>수중생태조사정점_2019</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>수중생태조사정점_2018</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>수중생태조사정점_2017</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>수중생태조사정점_2016</span>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>수중생태조사정점_2015</span>
-                    </div>
+                <div class="left_side_all">
+                    <div>전체보기</div>
                 </div>
 
-                 <!--que_4-->
-                 <div class="left_side_que4">
-                    핵심생태조사
-                    <img class="img_on4" src="../asset/depth_open.png">
-                    <img class="img_off4" src="../asset/depth_close.png">
+                <div class="left_side_title">
+                    해양생태계종합조사
                 </div>
-                <div class="left_side_anw4">
-                    <div>
-                        <input type="checkbox" id="anw_4">
-                        <label for="anw_4"><span>핵심생태조사정점_2020</span></label>
+
+                <div class="left_side_body">
+
+                    <!--que_1-->
+                    <div class="left_side_que">
+                        갯벌생테조사
+                        <img class="img_on" src="../asset/depth_open.png">
+                        <img class="img_off" src="../asset/depth_close.png">
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>핵심생태조사정점_2019</span>
+                    <div class="left_side_anw">
+                        <div>
+                            <input type="checkbox" id="anw_1">
+                            <label for="anw_1"><span>갯벌조사정점_2020</span></label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>갯벌조사정점_2019</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>갯벌조사정점_2018</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>갯벌조사정점_2017</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>갯벌조사정점_2016</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>갯벌조사정점_2015</span>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>핵심생태조사정점_2018</span>
+
+                    <!--que_2-->
+                    <div class="left_side_que2">
+                        연안생태조사
+                        <img class="img_on2" src="../asset/depth_open.png">
+                        <img class="img_off2" src="../asset/depth_close.png">
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>핵심생태조사정점_2017</span>
+                    <div class="left_side_anw2">
+                        <div>
+                            <input type="checkbox" id="anw_1">
+                            <label for="anw_1"><span>연안생태조사정점_2020</span></label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>연안생태조사정점_2019</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>연안생태조사정점_2018</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>연안생태조사정점_2017</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>연안생태조사정점_2016</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>연안생태조사정점_2015</span>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>핵심생태조사정점_2016</span>
+
+                    <!--que_3-->
+                    <div class="left_side_que3">
+                        수중생태조사
+                        <img class="img_on3" src="../asset/depth_open.png">
+                        <img class="img_off3" src="../asset/depth_close.png">
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <span>핵심생태조사정점_2015</span>
+                    <div class="left_side_anw3">
+                        <div>
+                            <input type="checkbox" id="anw_3">
+                            <label for="anw_3"><span>수중생태조사정점_2020</span></label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>수중생태조사정점_2019</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>수중생태조사정점_2018</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>수중생태조사정점_2017</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>수중생태조사정점_2016</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>수중생태조사정점_2015</span>
+                        </div>
                     </div>
+
+                    <!--que_4-->
+                    <div class="left_side_que4">
+                        핵심생태조사
+                        <img class="img_on4" src="../asset/depth_open.png">
+                        <img class="img_off4" src="../asset/depth_close.png">
+                    </div>
+                    <div class="left_side_anw4">
+                        <div>
+                            <input type="checkbox" id="anw_4">
+                            <label for="anw_4"><span>핵심생태조사정점_2020</span></label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>핵심생태조사정점_2019</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>핵심생태조사정점_2018</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>핵심생태조사정점_2017</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>핵심생태조사정점_2016</span>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span>핵심생태조사정점_2015</span>
+                        </div>
+                    </div>
+
+                    <div class="left_side_all" style="width: 200px; margin: 0 auto; margin-top: 200px;">
+                        <div onclick="right_side_on()">레이어 나타내기</div>
+                    </div>
+
                 </div>
+                
             </div>
+
         </section>
+        </div>
         <a class="side_nav_close" onclick="sied_section_slide();"></a>
         <a class="side_nav_open" onclick="sied_section_slide();"></a>
 
         <!--mainmap-->
         <section>
-        <div id="map"></div>
+            <div id="map"></div>
             <script type="text/javascript"
                 src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b9cdea80ea8c388d574f0917aa22d2f1">
-            </script>
+                </script>
         </section>
 
         <!--rightslide-->
         <section id="right_slide_section">
-            슬라이드
+            슬라이드등장
         </section>
 
     </article>

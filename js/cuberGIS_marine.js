@@ -79,6 +79,8 @@ function sied_section_slide(){
         $("#map_section").css("width", "100vw")
         $(".side_nav_close").css("left", "-1px")
         $(".side_nav_open").css("left", "-1px")
+        $("#left_side_switching").css("display", "none")
+
         setTimeout(function() {
             $(".side_nav_close").css("display", "none")
             $(".side_nav_open").css("display", "block")
@@ -89,6 +91,8 @@ function sied_section_slide(){
         $("#map_section").css("width", "calc(100vw - 350px)")
         $(".side_nav_close").css("left", "345px")
         $(".side_nav_open").css("left", "345px")
+        $("#left_side_switching").css("display", "block")
+
         setTimeout(function() {
             $(".side_nav_close").css("display", "block")
             $(".side_nav_open").css("display", "none")
@@ -97,3 +101,27 @@ function sied_section_slide(){
 
 }
 
+// left_side_swap
+function sideswap_layer(){
+    $(".select_menu_search").css("background", "#e7ebf3")
+    $(".select_menu_search").css("color", "#333")
+    $(".select_menu_layer").css("background", "#387ee7")
+    $(".select_menu_layer").css("color", "#fff")
+    $("#left_side_switching").css("display", "block") // 임의설정 ( 값 넣을예정이라면 수정필요 )
+
+}
+
+function sideswap_search(){
+    $(".select_menu_layer").css("background", "#e7ebf3")
+    $(".select_menu_layer").css("color", "#333")
+    $(".select_menu_search").css("background", "#387ee7")
+    $(".select_menu_search").css("color", "#fff")
+    $("#left_side_switching").css("display", "none")  // 임의설정 ( 값 넣을예정이라면 수정필요 )
+
+}
+
+// right_side_on
+function right_side_on(){
+    $("#right_slide_section").css("width", "300px")
+
+}
