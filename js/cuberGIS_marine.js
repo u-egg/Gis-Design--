@@ -1,3 +1,24 @@
+//kakao map api
+var container = document.getElementById('map');             //지도를 담을 영역의 DOM 레퍼런스
+var options = {                                             //지도를 생성할 때 필요한 기본 옵션
+    center: new kakao.maps.LatLng(35.158996722331345, 129.16270332333187),   //지도의 중심좌표.
+    level: 5                                                //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options);           //지도 생성 및 객체 리턴
+
+// 마커 생성
+var markerPosition = new kakao.maps.LatLng(35.158996722331345, 129.16270332333187);
+
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
 // sidesection_nav_acodian_menu
 $(".left_side_que").click(function() {
     $(this).next(".left_side_anw").stop().slideToggle(300);

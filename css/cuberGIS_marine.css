@@ -37,8 +37,9 @@ header img{
     transition: all 0.3s;
 }
 
-#map_section{
+#map{
     width: calc(100vw - 350px);
+    height: 100vh;
 }
 
 #right_slide_section{
