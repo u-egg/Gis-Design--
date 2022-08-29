@@ -1,0 +1,396 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    overflow: hidden;
+    font-family: 'Nanum Gothic';
+    font-weight: 600;
+}
+
+article {
+    display: flex;
+}
+
+header{
+    width: 100vw;
+    height: 60px;
+    background-color: #263748;
+}
+
+header img{
+    width: 148px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#left_slide_section{
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid #bebebe;
+    transition: all 0.3s;
+}
+
+#map_section{
+    width: calc(100vw - 350px);
+}
+
+#right_slide_section{
+    width: 300px;
+    display: none;
+}
+
+.left_side_select{
+    border-bottom: 1px solid #bebebe;
+}
+
+.select_menu_on{
+    width: 50%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    background: #387ee7;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.select_menu_off{
+    width: 50%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 15px;
+    background: #e7ebf3;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+
+}
+
+.select_menu_off:hover{
+    background-color: #bebebe;
+    color: #333;
+}
+
+.left_side_menu div{
+    width: 25%;
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    border-right: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    /* cursor: pointer; */
+}
+
+.left_side_all{
+    height: 40px;
+}
+
+.left_side_all div{
+    background: #06386e;
+    display: block;
+    width: 95%;
+    height: 35px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.left_side_title{
+    height: 38px;
+    padding: 10px 10px;
+    background-color: #e7ebf3;
+    font-size: 15px;
+    color: #333;
+}
+
+.left_side_body{
+    overflow-y: auto;
+    height: calc(100% - 390px);
+}
+/* que-1 */
+
+.left_side_que{
+    height: 46px;
+    padding: 15px 25px 15px 15px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    cursor: pointer;
+}
+
+.left_side_anw{
+    display: none;
+}
+
+.left_side_anw div{
+    height: 36px;
+    padding: 10px 25px 15px 35px;
+    font-size: 14px;
+    color: #666;
+    background: #f7f7f7 url(../asset/tree_line.png) 17px -4px repeat-y;
+    cursor: pointer;
+    border-top: 1px #ddd solid;
+    position: relative;
+}
+
+.left_side_anw div:last-child {
+    background-repeat: no-repeat;
+    border-bottom: 1px #ddd solid;
+}
+
+.img_on{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+    display: block;
+}
+
+.img_off{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+}
+
+.left_side_anw div input[type="checkbox"]{
+    position: absolute;
+    top: 12px;
+}
+
+.left_side_anw div span{
+    position: absolute;
+    left: 55px;
+}
+
+/* que-2 */
+
+.left_side_que2{
+    height: 46px;
+    padding: 15px 25px 15px 15px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    cursor: pointer;
+}
+
+.left_side_anw2{
+    display: none;
+}
+
+.left_side_anw2 div{
+    height: 36px;
+    padding: 10px 25px 15px 35px;
+    font-size: 14px;
+    color: #666;
+    background: #f7f7f7 url(../asset/tree_line.png) 17px -4px repeat-y;
+    cursor: pointer;
+    border-top: 1px #ddd solid;
+    position: relative;
+}
+
+.left_side_anw2 div:last-child {
+    background-repeat: no-repeat;
+    border-bottom: 1px #ddd solid;
+}
+
+.img_on2{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+    display: block;
+}
+
+.img_off2{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+}
+
+.left_side_anw2 div input[type="checkbox"]{
+    position: absolute;
+    top: 12px;
+}
+
+.left_side_anw2 div span{
+    position: absolute;
+    left: 55px;
+}
+
+/* que-3 */
+
+.left_side_que3{
+    height: 46px;
+    padding: 15px 25px 15px 15px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    cursor: pointer;
+}
+
+.left_side_anw3{
+    display: none;
+}
+
+.left_side_anw3 div{
+    height: 36px;
+    padding: 10px 25px 15px 35px;
+    font-size: 14px;
+    color: #666;
+    background: #f7f7f7 url(../asset/tree_line.png) 17px -4px repeat-y;
+    cursor: pointer;
+    border-top: 1px #ddd solid;
+    position: relative;
+}
+
+.left_side_anw3 div:last-child {
+    background-repeat: no-repeat;
+    border-bottom: 1px #ddd solid;
+}
+
+.img_on3{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+    display: block;
+}
+
+.img_off3{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+}
+
+.left_side_anw3 div input[type="checkbox"]{
+    position: absolute;
+    top: 12px;
+}
+
+.left_side_anw3 div span{
+    position: absolute;
+    left: 55px;
+}
+
+/* que-4 */
+
+.left_side_que4{
+    height: 46px;
+    padding: 15px 25px 15px 15px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    cursor: pointer;
+}
+
+.left_side_anw4{
+    display: none;
+}
+
+.left_side_anw4 div{
+    height: 36px;
+    padding: 10px 25px 15px 35px;
+    font-size: 14px;
+    color: #666;
+    background: #f7f7f7 url(../asset/tree_line.png) 17px -4px repeat-y;
+    cursor: pointer;
+    border-top: 1px #ddd solid;
+    position: relative;
+}
+
+.left_side_anw4 div:last-child {
+    background-repeat: no-repeat;
+    border-bottom: 1px #ddd solid;
+}
+
+.img_on4{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+    display: block;
+}
+
+.img_off4{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 12px;
+    height: 6px;
+}
+
+.left_side_anw4 div input[type="checkbox"]{
+    position: absolute;
+    top: 12px;
+}
+
+.left_side_anw4 div span{
+    position: absolute;
+    left: 55px;
+}
+
+.side_nav_close {
+    top: 50%;
+    left: 345px;
+    width: 22px;
+    overflow: hidden;
+    height: 70px;
+    background: url(../asset/slide_off.png) no-repeat center top;
+    line-height: 9999px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.side_nav_open {
+    top: 50%;
+    left: -1px;
+    width: 22px;
+    overflow: hidden;
+    height: 70px;
+    background: url(../asset/slide_on.png) no-repeat center top;
+    line-height: 9999px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    transition: all 0.3s;
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
