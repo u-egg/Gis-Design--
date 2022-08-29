@@ -46,6 +46,7 @@ header img{
 #map{
     width: calc(100vw - 350px);
     height: 100vh;
+    transition: all 0.3s;
 }
 
 #right_slide_section{

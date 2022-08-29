@@ -76,7 +76,7 @@ $(".left_side_que4").click(function() {
 function sied_section_slide(){
     if ($('#left_slide_section').css('width') == '350px') {
         $("#left_slide_section").css("width", "0")
-        $("#map_section").css("width", "100vw")
+        $("#map").css("width", "100vw")
         $(".side_nav_close").css("left", "-1px")
         $(".side_nav_open").css("left", "-1px")
         $("#left_side_switching").css("display", "none")
@@ -88,7 +88,7 @@ function sied_section_slide(){
     } 
     else {
         $("#left_slide_section").css("width", "350px")
-        $("#map_section").css("width", "calc(100vw - 350px)")
+        $("#map").css("width", "calc(100vw - 350px)")
         $(".side_nav_close").css("left", "345px")
         $(".side_nav_open").css("left", "345px")
         $("#left_side_switching").css("display", "block")
