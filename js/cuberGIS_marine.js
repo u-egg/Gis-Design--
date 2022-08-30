@@ -135,3 +135,116 @@ function allClear(){
     $("#right_slide_section").css("width", "0")
     $("#right_text_body").css("display", "none")
 }
+
+//nav_btn_swap
+function nav_btn_1(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_1").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "block")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_2(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_2").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "block")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_3(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_3").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "block")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_4(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_4").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "block")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_5(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_5").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "block")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_6(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_6").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "block")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_7(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_7").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "block")
+    $(".part_8").css("display", "none")
+}
+
+function nav_btn_8(){
+    $(".wrap_on").attr("class", "wrap_off")
+    $("#nav_btn_8").attr("class", "wrap_on")
+
+    $(".part_1").css("display", "none")
+    $(".part_2").css("display", "none")
+    $(".part_3").css("display", "none")
+    $(".part_4").css("display", "none")
+    $(".part_5").css("display", "none")
+    $(".part_6").css("display", "none")
+    $(".part_7").css("display", "none")
+    $(".part_8").css("display", "block")
+}
