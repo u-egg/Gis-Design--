@@ -33,7 +33,8 @@
                     <i class="fa-solid fa-magnifying-glass fa-xs"></i>&nbsp;&nbsp;검색
                 </div>
             </div>
-
+            <div id="test">
+            <!-- 레이어목록 파트 -->
             <div id="left_side_switching">
 
                 <div class="left_side_menu flex">
@@ -291,7 +292,32 @@
                 </div>
 
             </div>
+            
+        <!-- 검색 파트 -->
+        <div id="left_side_search">
+            <div class="search_area">
+                <span>
+                    <input type="radio" name="search" id="search_1" checked> 
+                    <label for="search_1">레이어(메뉴)</label>
+                </span>
+                <span style="left: 85px;">
+                    <input type="radio" name="search" id="search_2">
+                    <label for="search_2">해양관측정점명</label>
+                </span>                
+                <span style="left: 190px;">
+                    <input type="radio" name="search" id="search_3">
+                    <label for="search_3">주소검색</label>
+                </span>
 
+                <img src="https://www.meis.go.kr/images/map/help-circle.svg" width="18px" height="18px">
+                <br>
+                <input type="text">
+            </div>
+            <div class="search_solution">
+                검색된 결과가 없습니다.
+            </div>
+        </div>
+    </div>
 
 
         </section>
